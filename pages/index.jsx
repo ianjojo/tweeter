@@ -44,7 +44,7 @@ const Home = ({ providers }) => {
 
 export default Home;
 
-export async function getServerSideProps(context) {
+/* export async function getServerSideProps(context) {
   const https = require("https");
   const agent = new https.Agent({
     rejectUnauthorized: false,
@@ -67,3 +67,4 @@ export async function getServerSideProps(context) {
     },
   };
 }
+ */
