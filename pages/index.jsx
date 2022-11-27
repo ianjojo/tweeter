@@ -44,8 +44,8 @@ const Home = ({ providers }) => {
 
 export default Home;
 
-/* export async function getServerSideProps(context) {
-  const https = require("https");
+export async function getServerSideProps(context) {
+  /*  const https = require("https");
   const agent = new https.Agent({
     rejectUnauthorized: false,
   });
@@ -54,17 +54,16 @@ export default Home;
   }).then((res) => res.json());
   const followResults = await fetch("https://jsonkeeper.com/b/WWMJ", {
     agent: agent,
-  }).then((res) => res.json());
+  }).then((res) => res.json()); */
   const providers = await getProviders();
   const session = await getSession(context);
 
   return {
     props: {
-      trendingResults,
-      followResults,
+      /*  trendingResults,
+      followResults, */
       providers,
       session,
     },
   };
 }
- */
