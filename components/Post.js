@@ -132,7 +132,7 @@ function Post({ id, post, postPage }) {
         )}
         <img
           src={post?.image}
-          className='rounded-2x max-h-[700px] object-cover mr-2'
+          className='rounded-2xl max-h-[700px] object-cover mr-2'
           alt=''
           referrerPolicy='no-referrer'
         />
